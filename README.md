@@ -1,0 +1,1 @@
+Repositório criado com fins didáticos e com o bojetivo de aplicar as boas práticas aprendidas durante o semestre.

@@ -5,19 +5,23 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="../css/estilo.css"/>
+		<script rel="javascript" type="text/javascript" src="../jquery/jquery-3.3.1.min.js"></script>
+		<script rel="javascript" type="text/javascript" src="../jquery/func.js"></script>
     </head>
-    <body>
-        <header>
-            <nav>
-				<img id="logo" src="imagens/logotipo.png"/>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
+    <body id="fundo">   
+		<div id="toggle">
+			<div class="one"></div>
+			<div class="two"></div>
+			<div class="three"></div>
+		</div>
+		<nav id="menu">
+			     <ul>
                     <li><a href="fatec.html">Fatec</a></li>
-                    <li><a href="disciplinas.html">Disciplinas</a></li>
+                    <li><a href="portifolio.html">Portifólio</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+					<li><a href="feedback.html">Feedback</a></li>
                 </ul>
-            </nav>
-        </header>
-		<article id="principal">
+		</nav>
         <section id="conteudo"> 		
 		<section id="textos">
             <h1>Sobre mim...</h1>
@@ -45,43 +49,10 @@
                     <li><img src="../imagens/sobre/series/grimm.png"></li>
                 </ul>
 				
-        <h1>Entre em Contato</h1>
-
-		<section id="contato">
-			<a href="http://www.facebook.com/tamara.dasilvaramos" target="_blank"><img src="../imagens/icones/iconeface1.png" alt="ícone facebook"/></a>
-			<a href="https://www.instagram.com/tamaradasilvaramos/?hl=pt-br" target="_blank"><img src="../imagens/icones/iconeInsta1.png" alt="ícone instagram"/></a>
-			<a href="mailto:tamara.ramos@etec.sp.gov.br"><img alt="Ícone Email" src="../imagens/icones/outlook.png"></a>
-	
-        
-			<form id="contato" method="post" action="#">
-				<fieldset>
-					<legend>Deixe sua mensagem aqui </legend>
-				
-					<label for="nome">Nome</label>
-					<input type="text" id="nome" name="nome" maxlength="40" size="42"/>
-					<label for="email">E-mail</label>
-					<input type="email" id="email"  maxlength="40" size="42" required/>
-					<label for="tel">Celular</label>
-					<input type="tel" id="tel"/>
-					<label for="observacao">Observação</label>
-					<textarea cols="40" rows="8" id="observacao"></textarea>
-					
-					<button type="reset" id="zera" class="custom_buttom" name="Saiba Mais">Limpar</button>
-					<button type="button" id="enviar" class="custom_buttom"  name="Saiba Mais">Enviar</button>
-				</fieldset>
-			</form>
-		</section>
+       
 	 </section>
-     </article>	
-	
         <footer>
-            <ul id="menu-footer">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="fatec.html">Fatec</a></li>
-                <li><a href="disciplinas.html">Disciplinas</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-            </ul>
-            <p>Design by Tamara da Silva Ramos - 2018</p>
+            <p> &copy Tamara da Silva Ramos - 2018</p>
         </footer>
     </body>
 

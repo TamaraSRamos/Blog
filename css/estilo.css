@@ -1,0 +1,354 @@
+/*GERAL*/
+
+body{
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	margin:0;
+	padding: 0;
+}
+
+h2 , h3 {
+    font-family: "Roboto Slab" , Helvetica , Arial , sans-serif;
+    font-weight: 700;
+	text-align: center;
+    padding: .5em;
+}
+
+.botao{
+    text-decoration: none;
+    padding: 10px  30px;
+    font-size: .9em;
+    border-radius: 3px;
+}
+
+p{
+	text-align: justify;
+	padding: 2vh;
+}
+
+/*NAVEGAÇÃO*/
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+}
+
+nav > a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 28px;
+    font-family: Pacifico, serif;
+}
+
+nav  ul{
+    list-style: none;
+    padding: 0 ;
+    display: flex ;
+    flex-direction : column ;
+    align-items: center ;
+    width: 100% ;
+}
+
+nav  ul  li{
+	text-align: center;
+	width: 100%;
+	padding: 0.5%;
+}
+
+nav  ul  li  a{
+    display : block inline ;
+    padding: 10px  0 ;
+    width: 100% ;
+    text-decoration :none;
+    color: #fff;
+}
+
+nav ul li:hover{
+	background-color: #800000;
+}
+
+
+/*CABEÇALHO*/
+
+header{
+    background-image: url('../img/vermelhomaior.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex ;
+    flex-direction : column;
+    align-items: center;
+    text-align: center;
+	padding: 150px;
+}
+
+/*SOBRE*/
+
+#sobre{
+    display: flex;
+    flex-direction : column;
+    align-items: center;
+    padding: 0  20px  20px;
+    background-color: #800000;
+    color: #fff;
+}
+
+
+#sobre .botao{
+    background-color: #f1f1f1;
+    color: #4d4d4d;
+}
+#sobre p{
+    max-width: 1000px;
+}
+
+#foto{
+	width: 10vw;
+}
+#foto:hover, img.port:hover{
+	transform: scale(1.2, 1.2);
+	box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.8);
+}
+
+.gallery {
+  display: flex;  
+  flex-wrap: wrap;
+  margin: .5em 2.5em;
+  padding: 0.5em 1em;
+}
+.item {
+  flex: 1 0 15em;
+  margin: 1em;
+  min-width: 8em;
+  min-height: 8em;
+}
+img.port{
+  display: block;
+  width: 90%;
+}
+
+/*Fatec*/
+
+#fatec{
+    display: flex;
+    flex-direction : column;
+    align-items: center;
+}
+
+#fatec  section{
+    display: flex;
+    flex-direction : column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px ;
+	padding: 2vh;
+}
+
+#fatec p{
+	max-width: 1000px;
+}
+
+#gestao{
+	background-image: url('../img/gestao.png');
+	height: 2vh;
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	padding: 9vh;
+	
+}
+
+#agro{
+	background-image: url('../img/agro.png');
+	height: 2vh;
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	padding: 9vh;
+}
+
+#ads{
+	background-image: url('../img/ads2.png');
+	height: 2vh;
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	padding: 10vh;
+}
+
+#si{
+	background-image: url('../img/sistemas1.png');
+	height: 2vh;
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	padding: 10vh;
+}
+ 
+/*CONTATO*/
+
+#contato{
+    display: flex;
+    flex-direction : row;
+	margin: 0vh 20vw 10vh 20vw;
+	
+}
+
+/*RODAPÉ*/
+
+footer>p{
+	 text-align: center;
+}
+
+footer{
+
+    padding: 10px; 
+	background-color: #800000; 
+    color :#fff;
+}
+
+/* MEDIA QUERIES*/
+
+
+
+@media (min-width:318px and max-width:350px){
+    
+	header{
+	padding: 100px;
+	}
+    
+       #contato{
+        flex-direction: column;
+        margin: 0 25vw;
+    }
+	
+	#foto{
+		width:15vw;
+	}
+	
+	
+}
+
+@media (min-width:351px and max-width:470px){
+
+	footer {
+	width: 100%;
+	padding:5px;
+	margin-top:7px;
+	height: 100px;
+	}
+
+     #contato{
+        flex-direction: column;
+        margin: 0 32vw;
+ 
+    }
+	
+}
+
+@media (min-width:472px and max-width:650px){
+
+    #contato{
+        margin: 0 15vw 8vh 15vw;
+    }
+	
+	#foto{
+		width:20vw;
+	}
+}
+
+@media (min-width:651px and max-width:700px){
+
+	#menu1 > a {
+    display:inline;
+	padding-right: 18px;   
+	}
+    
+    #contato{
+        margin: 0 15vw 10vh 15vw;
+    }
+}
+
+@media (min-width:701px and max-width:800px){
+	.menu > a{
+		display: block;
+		width: 100%;
+	}
+
+    #contato{
+        margin: 0 19vw 8vh 19vw;
+    }
+		
+}
+
+
+@media (min-width:768px){
+	
+
+    /* Navegação */
+    nav{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    nav  ul{
+        flex-direction: row;
+        width: 70%;
+    }
+    
+    /*CABEÇALHO*/
+    
+    header{
+		height: 600px;
+        height: 60vh;
+        justify-content:center;
+    }
+    
+    /* SOBRE */
+    
+    #sobre{
+		height: 250px;
+        height:40vh;
+        justify-content:center;
+        min-height : 550px;
+        
+    }
+    
+    /*Fatec */
+    
+    #fatec{
+        flex-direction : column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0  auto;
+    }
+    
+    #fatec  h2{
+        text-align: center;
+        width: 100%;
+    }
+    
+    #fatec  section{
+        flex-grow : 1;
+        flex-basis : 150px;
+        padding: 0  10px;
+    }
+
+    /*CONTATO*/
+    
+    #contato{
+        flex-direction : row;
+        flex-wrap : wrap;
+        justify-content: space-around;
+    }
+    
+    #contato  h2, #contato p{
+        width: 100%;
+    }
+}
+
+
+
